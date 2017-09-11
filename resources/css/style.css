@@ -1,0 +1,302 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+/* Header Cover Pic */
+
+header {
+  height: 30rem;
+  background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+/* Green Header Bar */
+
+.greenbar {
+  background-color: cadetblue;
+  color: white;
+  justify-content: space-between;
+  position: relative;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+nav li{
+  display: inline;
+  padding: 0 1rem;
+  padding-right: 2rem;
+}
+
+
+
+
+
+/* Slogan in white box */
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.slogan {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+
+
+
+
+/* Service icons */
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.service-icon {
+  height: 7.5rem;
+  width: 5rem;
+  text-align: center;
+  margin: 0 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exams img {
+  width: 3.5rem;
+}
+
+.fittings img {
+  width: 4.6rem;
+  position: relative;
+  top: 1rem;
+}
+
+.delivery img {
+  width: 5.4rem;
+  position: relative;
+  top: 0.6rem;
+}
+
+
+
+
+/* Business Info */
+
+.businessinfo {
+  margin-top: 5rem;
+  min-width: 30%;
+}
+
+.biz {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background-color: cadetblue;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.25rem;
+  text-transform: uppercase;
+  max-width: 10rem;
+}
+
+.businessinfo p {
+  width: 80%;
+  line-height: 1.4rem;
+}
+
+
+
+
+
+/* Footer */
+
+
+footer .container {
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 960px) {
+  .greenbar {
+    top: 0rem;
+    width: 100%;
+  }
+  .title, .businessinfo p {
+    margin-left: 1rem;
+  }
+  header {
+    background-position: 35% 65%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .biz {
+    flex-wrap: wrap;
+  }
+  .service-icon {
+    padding-bottom: 2.5rem;
+  }
+  .slogan {
+    width: 15rem;
+  }
+  .businessinfo {
+    margin-top: 2rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 742px) {
+  .logo span {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 606px) {
+  .title {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .businessinfo p {
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 580px) {
+  header {
+    background-position: 29% 71%;
+  }
+  .slogan {
+    width: 10rem;
+    font-size: 1.6rem;
+  }
+}
+
+
+@media only screen and (max-width: 556px) {
+  .fullmenu {
+    display: none;
+  }
+  .onlymenu {
+    display: block;
+    margin-right: 2rem;
+  }
+  .footer-logo {
+    justify-content: center;
+  }
+    footer img {
+      padding: 4rem 0;
+      padding-right: 1em;
+    }
+}
+
+
+@media only screen and (min-width: 557px) {
+  .onlymenu {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  header {
+    background-position: 20% 80%;
+  }
+  header .flex {
+    justify-content: center;
+    position: relative;
+    bottom: -9rem;
+  }
+  .slogan {
+    margin-right: 0;
+    font-size: 1.3rem;
+    padding: 1.3rem 3rem;
+  }
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .exams img {
+    width: 4rem;
+    margin-bottom: 0.8rem;
+  }
+  .fittings img {
+    width: 5.2rem;
+  }
+  .delivery img {
+    width: 5.6rem;
+  }
+  .service-icon {
+    line-height: 1.2rem;
+  }
+  .footer-logo span {
+    display: none;
+  }
+
+}
